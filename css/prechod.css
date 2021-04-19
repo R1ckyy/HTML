@@ -1,0 +1,30 @@
+.transition-fade{
+    opacity: 1;
+    transition: 500ms;
+}
+
+html.is-animating .transition-fade{
+    transition-property: opacity;
+    opacity: 0;
+    transition-delay: 2s;
+}
+
+
+.button{
+    text-decoration: none;
+    width: 300px;
+    padding: 2px 10px;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+    transition: 100ms;
+    transition-property: background-color;
+}
+.button:active {
+    background-color: green;
+}

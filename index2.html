@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <title>Multimédia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/prechod.css">
+</head>
+
+<body>
+    <header id="swup" class="transition-fade">
+        <h1>Multimédia v HTML</h1>
+    </header>
+    <section id="swup" class="transition-fade">
+        <a href="/index.html" onclick="zvuk()" class="button">Tabulky</a>
+    </section>
+    <main id="swup" class="transition-fade">
+    </main>
+    <footer>
+        <p>© 2021 - IT1 - Erik Graf</p>
+    </footer>
+    <script>
+        function zvuk() {
+            var zvuk = new Audio('../zvuk/button.ogg');
+            zvuk.play()
+        }
+    </script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script defer src="prechod.js"></script>
+</body>
+
+</html>

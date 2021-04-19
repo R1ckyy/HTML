@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/prechod.css">
 </head>
 
 <body>
-    <header>
-        <h1>Tabulky v HTML</h1>
+    <header id="swup" class="transition-fade">
+        <h1>Tabulka v HTML</h1>
     </header>
-    <section>
-        <button onclick="zvuk()">Multimédia</button>
+    <section id="swup" class="transition-fade">
+        <a href="/index2.html" onclick="zvuk()" class="button">Multimédia</a>
     </section>
-    <main>
+    <main id="swup" class="transition-fade">
         <table>
             <thead>
                 <tr>
@@ -47,7 +48,8 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="4">Info o druhu: <a href="https://cs.wikipedia.org/wiki/K%C5%99e%C4%8Dek_zlat%C3%BD"
+                    <td colspan="4">Info o druhu: <a class="odkaz"
+                            href="https://cs.wikipedia.org/wiki/K%C5%99e%C4%8Dek_zlat%C3%BD"
                             target="_blank">https://cs.wikipedia.org/wiki/Křeček_zlatý</a></td>
                 </tr>
             </tfoot>
@@ -77,6 +79,8 @@
             zvuk.play()
         }
     </script>
+    <script src="/node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="prechod.js"></script>
 </body>
 
 </html>
