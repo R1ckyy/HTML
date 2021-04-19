@@ -71,15 +71,11 @@ button{
     background-color: orange;
     border-radius: 5px;
     box-shadow: 0 9px #999;
-    transition: 500ms;
+    transition: 100ms;
     transition-property: box-shadow,transform,background-color;
 }
-@keyframes button {
-    from {box-shadow: 0 9px #999;background-color: orange;}
-    to {box-shadow: 0 5px #666;background-color: green;transform: translateY(4px);}
-}
 button:active {
-    animation-name: button;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
+    box-shadow: 0 5px #666;
+    background-color: green;
+    transform: translateY(4px);
 }

@@ -14,7 +14,7 @@
         <h1>Tabulky v HTML</h1>
     </header>
     <section>
-        <button>Multimédia</button>
+        <button onclick="zvuk()">Multimédia</button>
     </section>
     <main>
         <table>
@@ -71,6 +71,12 @@
     <footer>
         <p>© 2021 - IT1 - Erik Graf</p>
     </footer>
+    <script>
+        function zvuk() {
+            var zvuk = new Audio('../zvuk/button.ogg');
+            zvuk.play()
+        }
+    </script>
 </body>
 
 </html>
