@@ -5,7 +5,8 @@ body{
     
 }
 header{
-    background-color: #131313;
+    border: 1px solid #525252;
+    background-color: #131313d5;
     text-align: center;
     color: white;
     padding: 5px 5px;
@@ -17,8 +18,8 @@ main{
     margin-right: 15%;
     margin-top: 1%;
     margin-bottom: 1%;
-    border: 1px solid #131313;
-    background-color: #131313;
+    border: 1px solid #525252;
+    background-color: #131313d5;
 }
 table {
     width: 55%;
@@ -26,7 +27,27 @@ table {
     margin-right: auto;
 }
 table,td,th {
-    border: 1px solid white;
+    border: 1px solid #525252;
     border-collapse: collapse;
     padding: 3px;
+}
+td,th {
+    color: white;
+}
+h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    text-align: center;
+    background-color: #131313d5;
+    border: 1px solid #525252;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 150, 150);
+    transition: 500ms;
+    transition-property: color;
+}
+a:hover{
+    color: rgb(0, 255, 255);
 }
