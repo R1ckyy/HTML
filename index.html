@@ -15,8 +15,9 @@
         <h1>Tabulka v HTML</h1>
     </header>
     <nav id="topnav" class="transition-fade">
-        <a href= "/pvy-tabulkaatd/index.html" onclick="zvuk()" class="active">Tabulky</a>
-        <a href="/pvy-tabulkaatd/index2.html" onclick="zvuk()">Multimédia</a>
+        <a href="javascript:delay('./index.html')" onclick="zvuk()" class="active">Tabulky</a>
+        <a href="javascript:delay('./index2.html')" onclick="zvuk()">Multimédia</a>
+        <a href="javascript:delay('./index3.html')" onclick="zvuk()">Fotogalerie</a>
     </nav>
     <main id="swup" class="transition-fade">
         <table>
@@ -79,9 +80,11 @@
             var zvuk = new Audio('./zvuk/button.ogg');
             zvuk.play()
         }
+
+        function delay (URL) {
+        setTimeout( function() { window.location = URL }, 3000 );
+        }
     </script>
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script defer src="prechod.js"></script>
 </body>
 
 </html>
