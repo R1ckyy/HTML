@@ -11,7 +11,7 @@ header{
     padding: 5px 5px;
     font-size: 25px;
 }
-main{
+main.main{
     padding: 10px;
     margin-left: 15%;
     margin-right: 15%;

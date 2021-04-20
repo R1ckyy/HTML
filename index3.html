@@ -2,26 +2,76 @@
 <html lang="cs">
 
 <head>
-    <title>Multimédia</title>
+    <title>Fotogalerie</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/galerie.css">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/prechod.css">
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
     <link rel="stylesheet" href="./dist/css/lightbox.min.css">
+
 </head>
 
 <body>
     <header>
         <h1>Fotogalerie v HTML</h1>
     </header>
-        <nav id="topnav">
-            <a href="javascript:delay('./index.html')" onclick="zvuk()" >Tabulky</a>
-            <a href="javascript:delay('./index2.html')" onclick="zvuk()" >Multimédia</a>
-            <a href="javascript:delay('./index3.html')" onclick="zvuk()" class="active">Fotogalerie</a>
-        </nav>
+    <nav id="topnav">
+        <a href="javascript:delay('./index.html')" onclick="zvuk()">Tabulky</a>
+        <a href="javascript:delay('./index2.html')" onclick="zvuk()">Multimédia</a>
+        <a href="javascript:delay('./index3.html')" onclick="zvuk()" class="active">Fotogalerie</a>
+    </nav>
     <main>
+        <div class="gallery">
+            <a data-lightbox="skola" href="galerie/1.jpg">
+                <img src="galerie/1.jpg" alt="Budova školy" width="600" height="400">
+            </a>
+            <div class="desc">Budova ŠŠPÚ</div>
+        </div>
+        <div class="gallery">
+            <a data-lightbox="skola" href="galerie/2.jpg">
+                <img src="galerie/2.jpg" alt="Budova školy" width="600" height="400">
+            </a>
+            <div class="desc">Budova ŠŠPÚ</div>
+        </div>
+        <div class="gallery">
+            <a data-lightbox="skola" href="galerie/3.jpg">
+                <img src="galerie/3.jpg" alt="Budova školy" width="600" height="400">
+            </a>
+            <div class="desc">Budova ŠŠPÚ</div>
+        </div>
+        <div class="gallery">
+            <a data-lightbox="skola" href="galerie/4.jpg">
+                <img src="galerie/4.jpg" alt="Budova školy" width="600" height="400">
+            </a>
+            <div class="desc">Budova ŠŠPÚ</div>
+        </div>
+        <div class="gallery">
+            <a data-lightbox="skola" href="galerie/5.jpg">
+                <img src="galerie/5.jpg" alt="Budova školy" width="600" height="400">
+            </a>
+            <div class="desc">Budova ŠŠPÚ</div>
+        </div>
+        <div class="gallery">
+            <a data-lightbox="skola" href="galerie/6.jpg">
+                <img src="galerie/6.jpg" alt="Budova školy" width="600" height="400">
+            </a>
+            <div class="desc">Budova ŠŠPÚ</div>
+        </div>
+        <div class="gallery">
+            <a data-lightbox="skola" href="galerie/7.jpg">
+                <img src="galerie/7.jpg" alt="Budova školy" width="600" height="400">
+            </a>
+            <div class="desc">Budova ŠŠPÚ</div>
+        </div>
+        <div class="gallery">
+            <a data-lightbox="skola" href="galerie/8.jpg">
+                <img src="galerie/8.jpg" alt="Budova školy" width="600" height="400">
+            </a>
+            <div class="desc">Budova ŠŠPÚ</div>
+        </div>
     </main>
     <footer>
         <p>© 2021 - IT1 - Erik Graf</p>
@@ -32,8 +82,8 @@
             zvuk.play()
         }
 
-        function delay (URL) {
-        setTimeout( function() { window.location = URL }, 3000 );
+        function delay(URL) {
+            setTimeout(function () { window.location = URL }, 2000);
         }
     </script>
     <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
