@@ -14,11 +14,10 @@
     <header id="swup" class="transition-fade">
         <h1>Tabulka v HTML</h1>
     </header>
-    <div id="swup" class="transition-fade">
-    <nav id="myHeader">
-        <a href="/pvy-tabulkaatd/index2.html" onclick="zvuk()" class="button">Multimédia</a>
+    <nav id="topnav" class="transition-fade">
+        <a href= "/index.html" onclick="zvuk()" class="active">Tabulky</a>
+        <a href="/index2.html" onclick="zvuk()">Multimédia</a>
     </nav>
-    </div>
     <main id="swup" class="transition-fade">
         <table>
             <thead>
@@ -83,18 +82,6 @@
     </script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script defer src="prechod.js"></script>
-    <script>
-window.onscroll = function() {myFunction()};
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-    </script>
 </body>
 
 </html>

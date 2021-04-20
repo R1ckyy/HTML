@@ -14,23 +14,22 @@
     <header id="swup" class="transition-fade">
         <h1>Multimédia v HTML</h1>
     </header>
-    <div id="swup" class="transition-fade">
-        <nav id="myHeader">
-            <a href= "/pvy-tabulkaatd/index.html" onclick="zvuk()" class="button">Tabulky</a>
+        <nav id="topnav" class="transition-fade">
+            <a href= "/index.html" onclick="zvuk()">Tabulky</a>
+            <a href= "/index2.html" onclick="zvuk()" class="active">Multimédia</a>
         </nav>
-        </div>
     <main id="swup" class="transition-fade">
         <h2>Obrázky v HTML</h2>
-        <img class="obrazek" src="/img/tehc.jpg" alt="Tehc" height="300">
+        <img class="obrazek" src="./img/tehc.jpg" alt="Tehc" height="300">
         <p class="paragraf">Potrét IT1 žáka</p>
         <h2>Audio a video v HTML</h2>
         <video class="obrazek" width="720" height="420" controls>
-            <source src="/img/A rescue helicopter has fallen into the man in lego city!.mp4" type="video/mp4">
+            <source src="./img/A rescue helicopter has fallen into the man in lego city!.mp4" type="video/mp4">
             Chyba.
         </video>
         <p class="paragraf">Reklama na LEGO City</p>
         <audio controls class="obrazek">
-            <source src="/img/brd.mp3" type="audio/mpeg">
+            <source src="./img/brd.mp3" type="audio/mpeg">
             Chyba.
         </audio>
         <p class="paragraf">Ptáček si zpívá</p>
@@ -45,24 +44,12 @@
     </footer>
     <script>
         function zvuk() {
-            var zvuk = new Audio('/zvuk/button.ogg');
+            var zvuk = new Audio('./zvuk/button.ogg');
             zvuk.play()
         }
     </script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script defer src="prechod.js"></script>
-    <script>
-        window.onscroll = function() {myFunction()};
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
-        function myFunction() {
-          if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }
-        }
-            </script>
 </body>
 
 </html>
