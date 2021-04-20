@@ -14,9 +14,11 @@
     <header id="swup" class="transition-fade">
         <h1>Tabulka v HTML</h1>
     </header>
-    <section id="swup" class="transition-fade">
-        <a href="/index2.html" onclick="zvuk()" class="button">Multimédia</a>
-    </section>
+    <div id="swup" class="transition-fade">
+    <nav id="myHeader">
+        <a href="/pvy-tabulkaatd/index2.html" onclick="zvuk()" class="button">Multimédia</a>
+    </nav>
+    </div>
     <main id="swup" class="transition-fade">
         <table>
             <thead>
@@ -75,12 +77,24 @@
     </footer>
     <script>
         function zvuk() {
-            var zvuk = new Audio('/zvuk/button.ogg');
+            var zvuk = new Audio('./zvuk/button.ogg');
             zvuk.play()
         }
     </script>
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script defer src="prechod.js"></script>
+    <script>
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+    </script>
 </body>
 
 </html>
