@@ -74,3 +74,43 @@ section{
     text-align: center;
     color:white;
 }
+
+/* Rozcestnik */
+
+.rozcestnik {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 150px;
+    border: 1px solid #525252;
+    background-color: #131313d5;
+    padding: 35px;
+}
+
+.rozcestniknav{
+text-align: center;
+margin-bottom: 50px;
+}
+
+.rozcestniklink {
+    background-color: #525252;
+    margin: auto auto;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    border: 1px solid #131313;
+    transition: 500ms;
+    transition-property: background-color;
+  }
+
+.rozcestniklink:hover {
+    background-color: #ff7b00;
+}
+
+.rozcestnik p {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-size: large;
+}
